@@ -2,8 +2,6 @@ abstract public class Figures {
 
     public abstract double getArea();
 
-    public abstract String getColor();
-
     public abstract String getDraw();
 
     public String color() {

@@ -1,7 +1,7 @@
 public class Trapeze extends Figures {
-    int sideA;
-    int sideB;
-    int height;
+    private int sideA;
+    private int sideB;
+    private int height;
 
     public Trapeze(int sideA, int sideB, int height) {
         this.sideA = sideA;
@@ -11,10 +11,6 @@ public class Trapeze extends Figures {
 
     public double getArea() {
         return 0.5 * (sideA + sideB) * height;
-    }
-
-    public String getColor() {
-        return color();
     }
 
     public String getDraw() {

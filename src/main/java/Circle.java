@@ -1,6 +1,6 @@
 public class Circle extends Figures {
 
-    int radius;
+    private int radius;
 
     public Circle(int radius) {
         this.radius = radius;

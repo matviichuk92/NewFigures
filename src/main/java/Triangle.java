@@ -1,7 +1,7 @@
 public class Triangle extends Figures {
 
-    int katetA;
-    int katetB;
+    private int katetA;
+    private int katetB;
 
     public Triangle(int katetA, int katetB) {
         this.katetA = katetA;
@@ -10,10 +10,6 @@ public class Triangle extends Figures {
 
     public double getArea() {
         return 0.5 * katetA * katetB;
-    }
-
-    public String getColor() {
-        return color();
     }
 
     public String getDraw() {

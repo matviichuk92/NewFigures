@@ -1,6 +1,6 @@
 public class Square extends Figures {
 
-    int side;
+    private int side;
 
     public Square(int side) {
         this.side = side;
@@ -8,10 +8,6 @@ public class Square extends Figures {
 
     public double getArea() {
         return side * side;
-    }
-
-    public String getColor() {
-        return color();
     }
 
     public String getDraw() {

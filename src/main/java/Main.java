@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        int randomForLoop = (int) (Math.random() * 10);
+        int randomForLoop = 1 + (int) (Math.random() * 10);
         for (int i = 0; i < randomForLoop; i++) {
-            int randomForConstructor = (int) (Math.random() * (10-2));
+            int randomForConstructor = 1 + (int) (Math.random() * (10-2));
             int randomForSwitch = (int) (Math.random() * 4);
             switch (randomForSwitch) {
                 case 1:
