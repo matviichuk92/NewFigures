@@ -1,11 +1,16 @@
 public class Triangle extends Figures {
-
     private int katetA;
     private int katetB;
+    private String color;
 
-    public Triangle(int katetA, int katetB) {
+    public Triangle(int katetA, int katetB, String color) {
         this.katetA = katetA;
         this.katetB = katetB;
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
     }
 
     public double getArea() {
@@ -13,10 +18,11 @@ public class Triangle extends Figures {
     }
 
     public String getDraw() {
-        return "трикутник, площа: " + getArea() + " кв. од., довжина гіпотенузи: " + getHipoyenuse() + " од., колір: " + color();
+        return "трикутник, площа: " + getArea() + " кв. од., довжина гіпотенузи: " + getHipoyenuse()
+                + " од., колір: " + getColor();
     }
 
     public int getHipoyenuse() {
-        return (int) Math.sqrt((Math.pow(katetA, 2) + Math.pow(katetB, 2)));
+        return (int) (Math.sqrt((Math.pow(katetA, 2) + Math.pow(katetB, 2))));
     }
 }
